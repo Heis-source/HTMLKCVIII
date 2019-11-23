@@ -1,0 +1,18 @@
+/* Variable aplicada luego en navbar.css */
+:root {
+    --navbar-size: 50px;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+}

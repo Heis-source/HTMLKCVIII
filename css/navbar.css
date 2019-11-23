@@ -1,0 +1,50 @@
+.navbar {
+    background-color: red;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--navbar-size);
+}
+
+.navbar > .navbar-list {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    z-index: 999;
+    top: 0;
+    right: 0;
+}
+
+.navbar-list > .navbar-item {
+    display: inline-block;
+}
+
+.navbar-list > .navbar-item:last-child {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.navbar-list > .navbar-item:hover {
+    background-color: red;
+    color: black;
+    font-style: oblique;
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: var(--navbar-size);
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    line-height: var(--navbar-size);
+    width: 3.5rem;
+    left: 1rem;
+    top: -0.2rem;
+}

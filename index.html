@@ -9,45 +9,57 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/landing.css">
+        <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav>
+        <nav class="navbar">
             <!-- Logo/nombre página -->
-            <div class='logo'><img src="/img/exploracion-del-ojo.png" alt='logo'></div>
+            <div class='logo'><a href="index.html"><img src="/img/ojo-logo-white.png" alt='logo'></a></div>
             <!-- Enlaces de navegacion -->
             <ul class='navbar-list'>
                 <li class='navbar-item'><a href="login.html">Entrar</a></li>
                 <li class='navbar-item'><a href="create.html">Crear cuenta</a></li>
             </ul> 
         </nav>      
-        <header>
-            <img src="/img/joker_2019_joaquin_phoenix-wallpaper-1920x1080.jpg" alt ='imagen entrada'>
-            <h1>Nombre, todos tus blockbasters, en internet</h1>
-            <h4>Y en cualquier dispositivo...</h4>
-            <img src="/img/tv.png" alt="tele">
-            <img src="/img/ordenador.png" alt="ordenador">
-            <img src="/img/ordenador-portatil.png" alt="portatil">
-            <img src="/img/manzana.png" alt="apple">
-            <img src="/img/logo-de-android.png" alt="android">
+        <header class="main-container">
+            <div class="main-container-item">
+                <img src="/img/joker_2019_joaquin_phoenix-wallpaper-1920x1080.jpg" alt ='imagen entrada'>
+            </div>
+            <div class="main-container-item">
+                <div>
+                    <img src="img/ojo-logo-red.png" alt="logo">
+                    <h1>Nombre, todos tus blockbusters, en internet</h1>
+                    <h4>Y en cualquier dispositivo...</h4>
+                </div>
+                <div class='plataformas'>
+                    <ul>
+                        <li class="plataformas-item"><img src="/img/tv.png" alt="tele"></li>
+                        <li class="plataformas-item"><img src="/img/ordenador.png" alt="ordenador"></li>
+                        <li class="plataformas-item"><img src="/img/ordenador-portatil.png" alt="portatil"></li>
+                        <li class="plataformas-item"><img src="/img/manzana.png" alt="apple"></li>
+                        <li class="plataformas-item"><img src="/img/logo-de-android.png" alt="android"></li>
+                    </ul>
+                </div>
+                <div class='promo'>
+                    <h3>¿Aun no lo has probado?</h3>
+                    <h6>¡Disfruta de 7 dias gratis!</h6>
+                    <a href="create.html"><button>Dame mis 7 dias</button></a> <a href="login.html"><button>Ya tengo cuenta</button></a>
+                </div>
+            </div>
         </header>
-        <main>
-            <section>
-                <h3>¿Aun no lo has probado?</h3>
-                <h6>¡Disfruta de 7 dias gratis!</h6>
-                <a href="create.html"><button>Dame mis 7 dias</button></a> <a href="login.html"><button>Ya tengo cuenta</button></a>            </section>
-        </main>
-        <footer>
+        <footer class="pie">
             <aside>
                 <p>Siguenos en redes sociales:</p>
-                <ul>
-                    <li><a href='#'><img src="/img/facebook.png" alt='facebook'></a></li>
-                    <li><a href='#'><img src="/img/instagram.png" alt="instagram"></a></li>
-                    <li><a href='#'><img src="/img/youtube.png" alt="youtube"></a></li>
-                    <li><a href='#'><img src="/img/gorjeo.png" alt="twitter"></a></li>
+                <ul class='list'>
+                    <li class='list-items'><a href='#'><img src="/img/facebook.png" alt='facebook'></a><span class="popup">Facebook!</span></li>
+                    <li class='list-items'><a href='#'><img src="/img/instagram.png" alt="instagram"></a><span class="popup">Instagram!</span></li></li>
+                    <li class='list-items'><a href='#'><img src="/img/youtube.png" alt="youtube"></a><span class="popup">YouTube!</span></li></li>
+                    <li class='list-items'><a href='#'><img src="/img/gorjeo.png" alt="twitter"></a><span class="popup">Twitter!</span></li></li>
                 </ul>
             </aside>
         </footer>
