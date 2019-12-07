@@ -6,14 +6,12 @@
     grid-template-areas: "header header"
                          "main1  main1"
                          "footer footer";
-    grid-template-rows: 250px 1fr 30px;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 30px;
     justify-content: stretch;
     align-content: stretch;
 }
 
 .item1 {
-    border: 5px solid goldenrod;
     grid-area: header;
     color: white;
 }
@@ -28,14 +26,14 @@
     margin-left: 5%; 
 }
 
-.item4 {
-    border: 5px solid goldenrod;
-    color: white;
-    grid-area: footer;
-}
-
 .item2-content {
     display:  flex;
+}
+
+.item4 {
+    color: white;
+    grid-area: footer;
+    margin-top: 3%;
 }
 
 .film {
@@ -43,20 +41,40 @@
     margin-left: 2%; 
     margin-bottom: 1%;
     overflow: hidden;
+    height: 100%;
+}
+
+.film > a {
+    text-decoration: none;
+    color: white;
+}
+
+.film > a > picture > img {
+    height: 80%;
+}
+
+.film:hover > a > .cartel-invis {
+    display: none;
+    cursor: pointer;
+}
+
+.film:hover > a > .sinopsis{
+    top: 0;
+    display: block;
+    margin-right: 4vh;
 }
 
 .sinopsis {
     position: relative;
     display: none;
-    height: 100%;
+    font-size: 1rem;
+    text-align: center;
 }
 
-.film:hover > .cartel-invis {
-    display: none;
-    cursor: pointer;
+.sinopsis-title > p {
+    font-size: 1rem;
 }
 
-.film:hover > .sinopsis{
-    top: 0;
-    display: block;
+.sinopsis-body > p {
+    font-size: 1rem;
 }

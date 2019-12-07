@@ -1,0 +1,102 @@
+.main-container {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    grid-template-areas: "header"
+                         "main1"
+                         "main2";
+    grid-template-rows: 0.5fr auto 30px;
+}
+
+.item1 {
+    grid-area: header;
+    color: white;
+    margin-top: 7vh;
+}
+
+.trailer {
+    margin-top: 3vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.trailer > video {
+    width: 100%;
+}
+
+.item2 {
+    color: white;
+    grid-area: main1;
+}
+
+.pelicula {
+    display: flex;
+    justify-content: space-around;
+    max-height: 500px;
+}
+
+.pelicula-info {
+    width: 80%;
+}
+
+.pelicula-info > p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 140%;
+    overflow-y: scroll;
+}
+
+.pelicula-cartel {
+    display: none;
+}
+
+.sinopsis {
+    height: 337px;
+}
+
+.reparto {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reparto > .actor > p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.reparto > .actor {
+    padding-right: 1vh;
+}
+
+.reparto > .actor > picture > img {
+    width: auto;
+    height: 10vh;
+}
+
+.titulo-reparto {
+    text-align: center;
+    border-bottom: 1px solid red;
+    margin-bottom: 3vh;
+    padding-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.titulo-reparto > h1 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 3vh;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid red;
+}
+
+.item4 {
+    color: white;
+    grid-area: footer;
+    margin-top: 3%;
+}

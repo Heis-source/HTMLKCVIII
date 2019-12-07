@@ -1,44 +1,18 @@
-.pie > aside {
-    margin-top: 2%;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-end;
-    color: white;
-}
-
-.pie > aside > .list {
-    list-style-type: none;
-    width: 10rem;
-    padding-left: 1rem;
-}
-
-.pie > aside > .list > .list-items {
-    width: 1.5rem;
+.main-container-item {
     display: inline-flex;
-    margin-left:2%%;
 }
 
-.pie > aside > p {
-    margin-top:1%;
+.main-container-item > .main-contaner-list {
+    list-style-type: none;
+    display: inline-flex;
 }
 
-.pie > aside > .list > .list-items {
-    position: relative;
-    display: inline-block;
-}
-  
-.pie > aside > .list > .list-items > .popup {
-    visibility: hidden;
-    width: 5rem;
-    height: 5rem;
-    background-color: red;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    border-color: 1px solid white;
-    padding: 5px;
+.main-container-item > .main-contaner-list > .list-items {
+    margin-left: 1.5vh;
+    width: 3vh;
 }
 
-.pie > aside > .list > .list-items:hover .popup {
-    visibility: visible;
-  }
+.item4 {
+    margin-left: 5%;
+    border-top: 1px solid red;
+}

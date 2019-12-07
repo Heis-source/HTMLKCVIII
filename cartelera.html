@@ -10,120 +10,253 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/cartelera.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" media="(min-width: 1193px)" href="css/footer.css" />
+        <link rel="stylesheet" media="(max-width: 1193px)" href="css/footerMobile.css" />
+        <link rel="stylesheet" media="(min-width: 1193px)" href="css/cartelera.css" />
+        <link rel="stylesheet" media="(max-width: 1193px)" href="css/carteleraMobile.css" />
+        <link rel="stylesheet" href="css/navbar-main.css">
     </head>
     <body>
-        <div class="main-container">
-            <header class="item1">
-
-            </header>
-            <main class="item2">
-                <div class="item2-title">
-                    <h1>Peliculas</h1>
+        <div class="navbar">
+            <div class='logo'>
+                <a href="index.html"><img src="/img/ojo-logo-white.png" alt='logo'></a>
+            </div>
+            <div>
+                <button class="simplebutton"><a href='index.html'>Salir</a></button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbutton">Opciones</button>
+                <div class="dropdown-container">
+                    <a href="#">Novedades</a>
+                    <a href="#">Peliculas</a>
+                    <a href="#">Series</a>
+                    <a href="#">Favoritos</a>
                 </div>
-                <div class="item2-content">
-                    <div class='film'>
-                        <picture class='cartel-invis'>
-                            <source media="(min-width: 500px)" srcset='/img/CartelPeli500.jpg'>
-                            <source media="(min-width: 200px)" srcset='/img/CartelPeli200.jpg'>
-                            <img src="/img/CartelPeli.jpg" alt="Peli 1">
-                        </picture>
-                        <div class="sinopsis">
-                            <div class='sinopsis-title'>
-                                <b>Avengers: End Game</b>
-                                <p>Calificacion: 5/5</p>
-                                <p>Año 2019</p>
-                            </div>
-                            <div classs='sinopsis-body'>
-                                <p>Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo.</p>
-                            </div>             
-                        </div>
+            </div>
+            <div>
+                <form action="#" class='search-combo'>
+                    <input type="search" name='search' class='search-input' placeholder='Busca lo que quieras...'>
+                </form>
+            </div>
+        </div> 
+        <div class="main-container">
+            <div class="item1">
+                <main class="item2">
+                    <div class="item2-title">
+                        <h1>Peliculas</h1>
                     </div>
-                    <div class='film'>
-                        <picture class='cartel-invis'>
-                            <source media="(min-width: 500px)" srcset='/img/CartelPeli500.jpg'>
-                            <source media="(min-width: 200px)" srcset='/img/CartelPeli200.jpg'>
-                            <img src="/img/CartelPeli.jpg" alt="Peli 1">
-                        </picture>
-                        <div class="sinopsis">
-                            <div class='sinopsis-title'>
-                                <b>Avengers: End Game</b>
-                                <p>Calificacion: 5/5</p>
-                                <p>Año 2019</p>
-                            </div>
-                            <div classs='sinopsis-body'>
-                                <p>Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo.</p>
-                            </div>             
+                    <div class="item2-content">
+                        <div class='film'>
+                            <a href="detalle.html">
+                                <picture class='cartel-invis'>
+                                    <source media="(min-width: 500px)" srcset='/img/CartelPeli500.jpg'>
+                                    <source media="(min-width: 200px)" srcset='/img/CartelPeli200.jpg'>
+                                    <img src="/img/CartelPeli.jpg" alt="Peli 1">
+                                </picture>
+                                <div class="sinopsis">
+                                    <div class='sinopsis-title'>
+                                        <b>Avengers: Infinity War</b>
+                                        <p>Calificacion: 8.5/10</p>
+                                        <p>Año 2019</p>
+                                    </div>
+                                    <div class='sinopsis-body'>
+                                        <p>Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.</p>
+                                    </div>             
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class='film'>
-                        <picture class='cartel-invis'>
-                            <source media="(min-width: 500px)" srcset='/img/CartelPeli500.jpg'>
-                            <source media="(min-width: 200px)" srcset='/img/CartelPeli200.jpg'>
-                            <img src="/img/CartelPeli.jpg" alt="Peli 1">
-                        </picture>
-                        <div class="sinopsis">
-                            <div class='sinopsis-title'>
-                                <b>Avengers: End Game</b>
-                                <p>Calificacion: 5/5</p>
-                                <p>Año 2019</p>
-                            </div>
-                            <div classs='sinopsis-body'>
-                                <p>Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo.</p>
-                            </div>             
+                        <div class='film'>
+                            <a href="detalle.html">
+                                <picture class='cartel-invis'>
+                                    <source media="(min-width: 500px)" srcset='/img/Estrella500.jpg'>
+                                    <source media="(min-width: 200px)" srcset='/img/Estrella200.jpg'>
+                                    <img src="/img/Estrella.jpg" alt="Peli 1">
+                                </picture>
+                                <div class="sinopsis">
+                                    <div class='sinopsis-title'>
+                                        <b>Ha nacido una estrella</b>
+                                        <p>Calificacion: 6.7/10</p>
+                                        <p>Año 2018</p>
+                                    </div>
+                                    <div class='sinopsis-body'>
+                                        <p>Jackson, una estrella de la música country con problemas de alcoholismo, descubre el talento de Ally, una joven cantante de la cual se enamora. Mientras la carrera de ella despega, Jackson percibe que sus días de gloria están llegando a su fin.</p>
+                                    </div>             
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class='film'>
-                        <picture class='cartel-invis'>
-                            <source media="(min-width: 500px)" srcset='/img/CartelPeli500.jpg'>
-                            <source media="(min-width: 200px)" srcset='/img/CartelPeli200.jpg'>
-                            <img src="/img/CartelPeli.jpg" alt="Peli 1">
-                        </picture>
-                        <div class="sinopsis">
-                            <div class='sinopsis-title'>
-                                <b>Avengers: End Game</b>
-                                <p>Calificacion: 5/5</p>
-                                <p>Año 2019</p>
-                            </div>
-                            <div classs='sinopsis-body'>
-                                <p>Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo.</p>
-                            </div>             
+                        <div class='film'>
+                            <a href="detalle.html">
+                                <picture class='cartel-invis'>
+                                    <source media="(min-width: 500px)" srcset='/img/Anillos500.jpg'>
+                                    <source media="(min-width: 200px)" srcset='/img/Anillos200.jpg'>
+                                    <img src="/img/Anillos.jpg" alt="Peli 1">
+                                </picture>
+                                <div class="sinopsis">
+                                    <div class='sinopsis-title'>
+                                        <b>La dos torres</b>
+                                        <p>Calificacion: 8/10</p>
+                                        <p>Año 2002</p>
+                                    </div>
+                                    <div class='sinopsis-body'>
+                                        <p>Gollum guía a Frodo y Sam a Mordor mientras Aragorn y sus compañeros defienden a Rohan del bestial ejército de Saruman.</p>
+                                    </div>             
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class='film'>
-                        <picture class='cartel-invis'>
-                            <source media="(min-width: 500px)" srcset='/img/CartelPeli500.jpg'>
-                            <source media="(min-width: 200px)" srcset='/img/CartelPeli200.jpg'>
-                            <img src="/img/CartelPeli.jpg" alt="Peli 1">
-                        </picture>
-                        <div class="sinopsis">
-                            <div class='sinopsis-title'>
-                                <b>Avengers: End Game</b>
-                                <p>Calificacion: 5/5</p>
-                                <p>Año 2019</p>
-                            </div>
-                            <div classs='sinopsis-body'>
-                                <p>Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo.</p>
-                            </div>             
+                        <div class='film'>
+                            <a href="detalle.html">
+                                <picture class='cartel-invis'>
+                                    <source media="(min-width: 500px)" srcset='/img/Dogs500.jpg'>
+                                    <source media="(min-width: 200px)" srcset='/img/Dogs200.jpg'>
+                                    <img src="/img/Dogs.jpg" alt="Peli 1">
+                                </picture>
+                                <div class="sinopsis">
+                                    <div class='sinopsis-title'>
+                                        <b>Reservoir Dogs</b>
+                                        <p>Calificacion: 8.1/10</p>
+                                        <p>Año 1992</p>
+                                    </div>
+                                    <div class='sinopsis-body'>
+                                        <p>Seis criminales profesionales son contratados para robar en un almacén de diamantes, pero la policía aparece el momento del atraco. Algunos miembros de la banda mueren en el enfrentamiento y otros logran huir, reagrupándose en un almacén y dispuestos a descubrir quién los delató.</p>
+                                    </div>             
+                                </div>
+                            </a>
+                        </div>
+                        <div class='film'>
+                            <a href="detalle.html">
+                                <picture class='cartel-invis'>
+                                    <source media="(min-width: 500px)" srcset='/img/Venom500.jpg'>
+                                    <source media="(min-width: 200px)" srcset='/img/Venom.jpg'>
+                                    <img src="/img/Venom.jpg" alt="Peli 1">
+                                </picture>
+                                <div class="sinopsis">
+                                    <div class='sinopsis-title'>
+                                        <b>Venom</b>
+                                        <p>Calificacion: 5.5/10</p>
+                                        <p>Año 2018</p>
+                                    </div>
+                                    <div class='sinopsis-body'>
+                                        <p>El periodista Eddie Brock está investigando a Carlton Drake, el célebre fundador de Life Foundation. Brock establece una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y lo vuelve perverso.</p>
+                                    </div>             
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </main>
+            <main class="item2">
+                <div class="item2-title">
+                    <h1>Series</h1>
+                </div>
+                <div class="item2-content">
+                    <div class='film'>
+                        <a href="detalle.html">
+                            <picture class='cartel-invis'>
+                                <source media="(min-width: 500px)" srcset='/img/CartelPeli500.jpg'>
+                                <source media="(min-width: 200px)" srcset='/img/CartelPeli200.jpg'>
+                                <img src="/img/CartelPeli.jpg" alt="Peli 1">
+                            </picture>
+                            <div class="sinopsis">
+                                <div class='sinopsis-title'>
+                                    <b>Avengers: Infinity War</b>
+                                    <p>Calificacion: 8.5/10</p>
+                                    <p>Año 2019</p>
+                                </div>
+                                <div class='sinopsis-body'>
+                                    <p>Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.</p>
+                                </div>             
+                            </div>
+                        </a>
+                    </div>
+                    <div class='film'>
+                        <a href="detalle.html">
+                            <picture class='cartel-invis'>
+                                <source media="(min-width: 500px)" srcset='/img/Estrella500.jpg'>
+                                <source media="(min-width: 200px)" srcset='/img/Estrella200.jpg'>
+                                <img src="/img/Estrella.jpg" alt="Peli 1">
+                            </picture>
+                            <div class="sinopsis">
+                                <div class='sinopsis-title'>
+                                    <b>Ha nacido una estrella</b>
+                                    <p>Calificacion: 6.7/10</p>
+                                    <p>Año 2018</p>
+                                </div>
+                                <div class='sinopsis-body'>
+                                    <p>Jackson, una estrella de la música country con problemas de alcoholismo, descubre el talento de Ally, una joven cantante de la cual se enamora. Mientras la carrera de ella despega, Jackson percibe que sus días de gloria están llegando a su fin.</p>
+                                </div>             
+                            </div>
+                        </a>
+                    </div>
+                    <div class='film'>
+                        <a href="detalle.html">
+                            <picture class='cartel-invis'>
+                                <source media="(min-width: 500px)" srcset='/img/Anillos500.jpg'>
+                                <source media="(min-width: 200px)" srcset='/img/Anillos200.jpg'>
+                                <img src="/img/Anillos.jpg" alt="Peli 1">
+                            </picture>
+                            <div class="sinopsis">
+                                <div class='sinopsis-title'>
+                                    <b>La dos torres</b>
+                                    <p>Calificacion: 8/10</p>
+                                    <p>Año 2002</p>
+                                </div>
+                                <div class='sinopsis-body'>
+                                    <p>Gollum guía a Frodo y Sam a Mordor mientras Aragorn y sus compañeros defienden a Rohan del bestial ejército de Saruman.</p>
+                                </div>             
+                            </div>
+                        </a>
+                    </div>
+                    <div class='film'>
+                        <a href="detalle.html">
+                            <picture class='cartel-invis'>
+                                <source media="(min-width: 500px)" srcset='/img/Dogs500.jpg'>
+                                <source media="(min-width: 200px)" srcset='/img/Dogs200.jpg'>
+                                <img src="/img/Dogs.jpg" alt="Peli 1">
+                            </picture>
+                            <div class="sinopsis">
+                                <div class='sinopsis-title'>
+                                    <b>Reservoir Dogs</b>
+                                    <p>Calificacion: 8.1/10</p>
+                                    <p>Año 1992</p>
+                                </div>
+                                <div class='sinopsis-body'>
+                                    <p>Seis criminales profesionales son contratados para robar en un almacén de diamantes, pero la policía aparece el momento del atraco. Algunos miembros de la banda mueren en el enfrentamiento y otros logran huir, reagrupándose en un almacén y dispuestos a descubrir quién los delató.</p>
+                                </div>             
+                            </div>
+                        </a>
+                    </div>
+                    <div class='film'>
+                        <a href="detalle.html">
+                            <picture class='cartel-invis'>
+                                <source media="(min-width: 500px)" srcset='/img/Venom500.jpg'>
+                                <source media="(min-width: 200px)" srcset='/img/Venom.jpg'>
+                                <img src="/img/Venom.jpg" alt="Peli 1">
+                            </picture>
+                            <div class="sinopsis">
+                                <div class='sinopsis-title'>
+                                    <b>Venom</b>
+                                    <p>Calificacion: 5.5/10</p>
+                                    <p>Año 2018</p>
+                                </div>
+                                <div class='sinopsis-body'>
+                                    <p>El periodista Eddie Brock está investigando a Carlton Drake, el célebre fundador de Life Foundation. Brock establece una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y lo vuelve perverso.</p>
+                                </div>             
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </main>
             <footer class="item4">
-                <p>4</p>
+                <div class='main-container-item'>
+                    <ul class='main-contaner-list'>
+                        <li class='list-items'><a href='#'><img src="/img/facebook.png" alt='facebook'></a></li>
+                        <li class='list-items'><a href='#'><img src="/img/instagram.png" alt="instagram"></a></li>
+                        <li class='list-items'><a href='#'><img src="/img/youtube.png" alt="youtube"></a></li>
+                        <li class='list-items'><a href='#'><img src="/img/gorjeo.png" alt="twitter"></a></li>
+                    </ul>
+                </div>
             </footer>
         </div>      
         <script src="" async defer></script>
     </body>
-</html>          
-
-
-<!-- <div class='main-container-item'>
-        <ul class='main-contaner-list'>
-            <li class='list-items'><a href='#'><img src="/img/facebook.png" alt='facebook'></a></li>
-            <li class='list-items'><a href='#'><img src="/img/instagram.png" alt="instagram"></a></li>
-            <li class='list-items'><a href='#'><img src="/img/youtube.png" alt="youtube"></a></li>
-            <li class='list-items'><a href='#'><img src="/img/gorjeo.png" alt="twitter"></a></li>
-        </ul>
-    </div> -->
+</html>

@@ -1,0 +1,26 @@
+.pie {
+    margin-top: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    justify-content: flex-end;
+}
+
+.pie > .list {
+    list-style-type: none;
+    width: 20rem;
+    padding-left: 1rem;
+    align-self: center;
+    align-content: center;
+}
+
+.pie > .list > .list-items {
+    width: 2.5rem;
+    display: inline-flex;
+    margin-left:2%;
+}
+
+.pie > .list > .list-items {
+    position: relative;
+    display: inline-block;
+}

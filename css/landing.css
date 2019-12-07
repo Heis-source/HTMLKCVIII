@@ -1,15 +1,9 @@
 .main-container {
     padding: 0;
     margin-top: 5em;
-    
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    
-    -webkit-flex-flow: row wrap;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .main-container > .main-container-item {
@@ -60,6 +54,7 @@ button {
     margin-left: 2.8rem;
     margin-right: 2.5rem;
     margin-top: 2%;
+    margin-bottom: 6vh;
 }
 
 button:hover {

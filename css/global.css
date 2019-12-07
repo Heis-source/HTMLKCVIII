@@ -7,12 +7,46 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: black;
+    min-width: 300px;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 30px;
+}
+p {
+  font-size: 24px;
+}
+
+@media (min-width: 480px) and (max-width: 1193px) {
+  h1 {
+    font-size: calc( 30px + var(--fluid-type) );
+  }
+
+  p {
+    font-size: calc( 24px + var(--fluid-type) );
+  }
+}
+
+@media (min-width: 768px) {
+/* .5vw = 0.5% del viewport: 0.5*768/100 = 3.84px = 4px */
+  h1 {
+    font-size: 34px;  /* 40 + 4px */
+  }
+
+  p {
+    font-size: 28px  /* 24px + 4px */
+  }
 }
